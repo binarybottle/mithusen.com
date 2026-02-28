@@ -1,0 +1,26 @@
+# BEGIN WordPress Multisite (Subdomain mode)
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+# uploaded files for subsites
+RewriteRule ^([_0-9a-zA-Z-]+/)?files/(.+) wp-includes/ms-files.php?file=$2 [L]
+
+# add a trailing slash to /wp-admin
+RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+# END WordPress Multisite
+
+<IfModule php_module>
+    php_flag display_errors Off
+    php_value max_execution_time 180
+    php_value max_input_time 60
+    php_value max_input_vars 5000
+    php_value memory_limit 256M
+    php_value post_max_size 256M
+    php_value upload_max_filesize 512M
+</IfModule>

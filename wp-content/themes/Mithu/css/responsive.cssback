@@ -1,0 +1,38 @@
+ 
+@media only screen and (max-width: 1920px) and (min-width: 1500px) {
+	.navbar-nav {
+    float: none;
+    margin: 0 auto;
+    width: 22%;
+}
+	.column {
+    margin: 23% auto 0;
+    position: relative;
+    text-align: center;
+    width: 400px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    
+    padding: 15px 15px;
+    
+}
+}
+@media only screen and (max-width: 1440px) and (min-width: 1400px) {
+.navbar-nav {
+    float: none;
+    margin: 0 auto;
+    width: 30%;
+}
+
+.column {
+    margin: 27% auto 0;
+    
+}
+}
+@media only screen and (max-width: 1280px){
+	.navbar-nav {
+		width: 34%;
+	}
+}
+	

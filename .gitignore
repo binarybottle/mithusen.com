@@ -1,0 +1,36 @@
+# Uploads (too large for git — sync via FTP/hosting file manager)
+wp-content/uploads/
+
+# Secrets (DB credentials, salts)
+wp-config-secrets.php
+
+# Database dumps (contain credentials, import manually)
+database.sql
+database-local.sql
+
+# Docker volumes
+db_data/
+wordpress_data/
+
+# WordPress core (installed by hosting provider)
+wp-admin/
+wp-includes/
+wp-login.php
+wp-cron.php
+xmlrpc.php
+index.php
+wp-*.php
+!wp-config.php
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# PHP logs
+*.log
+debug.log

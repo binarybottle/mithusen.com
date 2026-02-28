@@ -1,0 +1,50 @@
+var $j = jQuery.noConflict();
+$j(document).ready(function(){
+	$j('#main_slidera').owlCarousel({
+        loop:true,
+        autoPlay:3000,
+		singleItem:true
+    });
+		$j('#main_slideraa').owlCarousel({
+        loop:true,
+        autoPlay:false,
+		singleItem:true
+    });
+	
+	
+	var owl;
+
+
+	$j('.tprev').click(function(){
+		owl = $j(this).parent().parent().find('> .owl-carousel').data('owlCarousel');
+		owl.prev();
+	});
+	$j('.tnext').click(function(){
+		owl = $j(this).parent().parent().find('> .owl-carousel').data('owlCarousel');
+		owl.next();
+	});
+	
+	$j('.tpreva').click(function(){
+		owl = $j(this).parent().parent().find('> .owl-carousel').data('owlCarousel');
+		owl.prev();
+	});
+	$j('.tnextz').click(function(){
+		owl = $j(this).parent().parent().find('> .owl-carousel').data('owlCarousel');
+		owl.next();
+	});
+	
+	
+	
+	
+	
+	
+});
+
+
+
+
+
+
+
+
+

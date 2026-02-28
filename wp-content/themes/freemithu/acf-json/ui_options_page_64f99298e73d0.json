@@ -1,0 +1,22 @@
+{
+    "key": "ui_options_page_64f99298e73d0",
+    "title": "Contract form",
+    "active": false,
+    "menu_order": 0,
+    "page_title": "Contract form",
+    "menu_slug": "contract-form",
+    "parent_slug": "none",
+    "advanced_configuration": 1,
+    "icon_url": "",
+    "menu_title": "",
+    "position": 24,
+    "redirect": 0,
+    "description": "",
+    "update_button": "Update",
+    "updated_message": "Options Updated",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "",
+    "autoload": 0,
+    "modified": 1696576358
+}

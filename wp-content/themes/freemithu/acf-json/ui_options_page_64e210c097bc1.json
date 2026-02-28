@@ -1,0 +1,22 @@
+{
+    "key": "ui_options_page_64e210c097bc1",
+    "title": "Home page",
+    "active": true,
+    "menu_order": 0,
+    "page_title": "Home page",
+    "menu_slug": "home-page",
+    "parent_slug": "none",
+    "advanced_configuration": 1,
+    "icon_url": "dashicons-admin-home",
+    "menu_title": "",
+    "position": 21,
+    "redirect": 0,
+    "description": "",
+    "update_button": "Update",
+    "updated_message": "Options Updated",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "",
+    "autoload": 0,
+    "modified": 1692537258
+}
