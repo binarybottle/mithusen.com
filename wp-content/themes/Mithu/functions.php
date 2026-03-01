@@ -429,7 +429,6 @@ register_post_type( 'projects',
 	'supports' => array('title','editor','thumbnail', 'author', 'comments')
 	)
 );
-/* Mediums 
 register_post_type( 'mediums',
 	array(
 	'labels' => array(
@@ -439,9 +438,10 @@ register_post_type( 'mediums',
 	'taxonomies' => array('category','post_tag'),
 	'public' => true,
 	'has_archive' => true,
+	'rewrite' => array('slug' => 'projects'),
 	'supports' => array('title','editor','thumbnail', 'author', 'comments')
 	)
-);*/
+);
 add_filter('auto_update_theme', '__return_true'); 
 /* Newsletter 
 register_post_type( 'newsletter',
