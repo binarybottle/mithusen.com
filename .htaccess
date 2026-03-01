@@ -15,10 +15,13 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 # END WordPress Multisite
 
-<IfModule php_module>
+<IfModule LiteSpeed>
+    RewriteEngine On
+</IfModule>
+
+<IfModule mod_php.c>
     php_flag display_errors Off
     php_value max_execution_time 180
-    php_value max_input_time 60
     php_value max_input_vars 5000
     php_value memory_limit 256M
     php_value post_max_size 256M
