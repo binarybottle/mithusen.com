@@ -221,7 +221,7 @@ html, body {
   position: fixed !important;
   top: 20%;
   bottom: auto;
-  right: 3.5%;
+  right: 4%;
   color: white;
   font-size: 13px;
   z-index: 100;
@@ -250,7 +250,7 @@ html, body {
   .sli-nav.tprev { position: fixed !important; right: 24% !important; top: 20% !important; transform: none !important; }
   .sli-nav.tnext { position: fixed !important; right: 15% !important; top: 20% !important; }
   #currentIndex  { right: 32% !important; top: 20% !important; }
-  .idx-total     { right: 7%  !important; top: 20% !important; }
+  .idx-total     { right: 8%  !important; top: 20% !important; }
   .back-tooltiptext, .projects-tooltiptext{ display: none; }
 }
 </style>
