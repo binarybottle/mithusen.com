@@ -193,11 +193,11 @@ html, body {
 .main-menu { opacity: 0.75; }
 .main-menu:hover{ opacity: 1; }
 
-/* Arrows + counter: top-right of image, symmetrically around the number */
+/* Navigation layout (top-right): [current] ← → [total] */
 .sli-nav.tprev,
 .sli-nav.tnext {
   position: fixed !important;
-  top: 16% !important;
+  top: 20% !important;
   bottom: auto !important;
   z-index: 100;
   color: white;
@@ -206,15 +206,22 @@ html, body {
   height: auto;
   cursor: pointer;
 }
-.sli-nav.tprev { right: 12%; }  /* 5% left of number centre */
-.sli-nav.tnext { right: 2%; }   /* 5% right of number centre */
-.a_q1 span.number {
+.sli-nav.tprev { right: 8.5%; }
+.sli-nav.tnext { right: 6%; }
+#currentIndex {
   position: fixed !important;
-  top: 16%;
+  top: 20%;
   bottom: auto;
-  right: 7%;
-  transform: translateX(50%);   /* centre the element at right:7% */
-  float: none;
+  right: 11%;
+  color: white;
+  font-size: 13px;
+  z-index: 100;
+}
+.idx-total {
+  position: fixed !important;
+  top: 20%;
+  bottom: auto;
+  right: 3.5%;
   color: white;
   font-size: 13px;
   z-index: 100;
@@ -240,9 +247,10 @@ html, body {
   #lines{ display: none; }
   .project-menu{ background: black; }
   section#slider{ margin-top: 135px; padding-top: 15px; z-index: 4; }
-  .sli-nav.tprev { position: fixed !important; right: 30% !important; top: 20% !important; transform: none !important; }
-  .sli-nav.tnext { position: fixed !important; right: 5% !important; top: 20% !important; }
-  .a_q1 span.number { top: 20% !important; right: 17.5% !important; }
+  .sli-nav.tprev { position: fixed !important; right: 24% !important; top: 20% !important; transform: none !important; }
+  .sli-nav.tnext { position: fixed !important; right: 15% !important; top: 20% !important; }
+  #currentIndex  { right: 32% !important; top: 20% !important; }
+  .idx-total     { right: 7%  !important; top: 20% !important; }
   .back-tooltiptext, .projects-tooltiptext{ display: none; }
 }
 </style>
@@ -296,7 +304,8 @@ html, body {
             <div class="text">
                 <div class="a_q"><span class="sounda exc"></span></div>
                 <div class="a_q1">
-                    <span class="number"><span id="currentIndex">1</span>-<?php echo --$i; ?></span>
+                    <span id="currentIndex">1</span>
+                    <span class="idx-total"><?php echo --$i; ?></span>
                 </div>
                 <div class="ploading" style="color:rgb(255,255,255,0.8);">
                     <div class="load-content" id="asx" style="display:block;transition-duration:0.45s"><?php the_content(); ?></div>
