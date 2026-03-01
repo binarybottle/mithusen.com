@@ -312,6 +312,7 @@ html, body {
   color: white;
   font-size: 13px;
   z-index: 100;
+  cursor: pointer;
 }
 .idx-total {
   position: fixed !important;
@@ -321,6 +322,7 @@ html, body {
   color: white;
   font-size: 13px;
   z-index: 100;
+  cursor: pointer;
 }
 .a_q span.sounda {
   position: fixed;
@@ -562,6 +564,8 @@ jQuery(".tnext").click(function(){
 var owl = jQuery('.owl-carousel');
 jQuery(".tnext").click(function(){ owl.trigger('next.owl.carousel'); })
 jQuery(".tprev").click(function(){ owl.trigger('prev.owl.carousel'); })
+jQuery("#currentIndex").click(function(){ owl.trigger('prev.owl.carousel'); })
+jQuery(".idx-total").click(function(){ owl.trigger('next.owl.carousel'); })
 
 owl.on('changed.owl.carousel', function(event) {
     if ( event.page.count != 0 ) {
