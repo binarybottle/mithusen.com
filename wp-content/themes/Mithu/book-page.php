@@ -63,7 +63,7 @@ html, body {
 /* Book layout */
 .book-wrap {
   position: relative; z-index: 5;
-  margin: 110px auto 80px;
+  margin: 180px auto 80px;
   width: 90%; max-width: 920px;
   color: white;
   display: flex;
@@ -126,26 +126,20 @@ html, body {
 }
 .buy-btn {
   display: inline-block;
-  padding: 9px 20px;
-  border: 1px solid rgba(255,255,255,0.4);
+  padding: 10px 24px;
+  border: 1px solid rgba(255,255,255,0.6);
   color: white;
   text-decoration: none;
   font-family: Arial, sans-serif;
   font-size: 13px;
-  border-radius: 2px;
+  border-radius: 999px;
   transition: background 0.25s, border-color 0.25s;
   white-space: nowrap;
 }
 .buy-btn:hover {
-  background: rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.15);
   border-color: white; color: white;
 }
-.buy-btn.amazon { border-color: #f90; color: #f90; }
-.buy-btn.amazon:hover { background: rgba(255,153,0,0.12); }
-.buy-btn.mapin { border-color: #7ec8e3; color: #7ec8e3; }
-.buy-btn.mapin:hover { background: rgba(126,200,227,0.12); }
-.buy-btn.gallery { border-color: #c9b8f0; color: #c9b8f0; }
-.buy-btn.gallery:hover { background: rgba(201,184,240,0.12); }
 
 .reviews-list {
   list-style: none; padding: 0; margin: 0;
@@ -204,7 +198,9 @@ html, body {
     <?php if (has_post_thumbnail()) : ?>
       <img src="<?php the_post_thumbnail_url('large'); ?>" alt="Unmyth book cover">
     <?php else : ?>
-      <div class="book-cover-placeholder">
+      <img src="https://www.mapinpub.com/cdn/shop/files/Unmyth_cover.jpg" alt="Unmyth book cover"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <div class="book-cover-placeholder" style="display:none;">
         <div style="font-size:42px; margin-bottom:16px;">📖</div>
         <strong>Unmyth</strong><br>Mithu Sen
       </div>
@@ -223,9 +219,9 @@ html, body {
 
     <p class="buy-heading">Buy</p>
     <div class="buy-buttons">
-      <a class="buy-btn amazon" href="https://www.amazon.com/UnMyth-Works-Worlds-Mithu-Sen/dp/9394501878" target="_blank" rel="noopener">Amazon</a>
-      <a class="buy-btn mapin"  href="https://www.mapinpub.com/products/unmyth?variant=46307019522262" target="_blank" rel="noopener">Mapin</a>
-      <a class="buy-btn gallery" href="https://www.gallerychemould.com/publications/180-unmyth-mithu-sen/" target="_blank" rel="noopener">Chemould Gallery</a>
+      <a class="buy-btn" href="https://www.amazon.com/UnMyth-Works-Worlds-Mithu-Sen/dp/9394501878" target="_blank" rel="noopener">Amazon</a>
+      <a class="buy-btn" href="https://www.mapinpub.com/products/unmyth?variant=46307019522262" target="_blank" rel="noopener">Mapin</a>
+      <a class="buy-btn" href="https://www.gallerychemould.com/publications/180-unmyth-mithu-sen/" target="_blank" rel="noopener">Chemould Gallery</a>
     </div>
 
     <p class="reviews-heading">Reviews</p>
