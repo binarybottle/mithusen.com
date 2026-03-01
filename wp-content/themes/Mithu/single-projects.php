@@ -288,6 +288,42 @@ html, body {
 .main-menu:hover{
   opacity: 1;
 }
+
+/* Fix arrows + counter to bottom of viewport so they stay visible regardless of image height */
+.sli-nav.tprev,
+.sli-nav.tnext {
+  position: fixed !important;
+  top: auto !important;
+  bottom: 24px;
+  z-index: 100;
+  color: white;
+  font-size: 20px;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+.sli-nav.tprev { right: 17.8%; }
+.sli-nav.tnext { right: 12.5%; }
+.a_q1 span.number {
+  position: fixed !important;
+  bottom: 24px;
+  right: 22%;
+  float: none;
+  color: white;
+  font-size: 13px;
+  z-index: 100;
+}
+.a_q span.sounda {
+  position: fixed;
+  bottom: 44px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 13px;
+  z-index: 100;
+  white-space: nowrap;
+}
+
 @media only screen and (max-width: 768px){
   html, body{
     font-family: 'Comic Neue', sans-serif;
