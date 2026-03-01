@@ -193,25 +193,27 @@ html, body {
 .main-menu { opacity: 0.75; }
 .main-menu:hover{ opacity: 1; }
 
-/* Fix arrows + counter to bottom of viewport regardless of image height */
+/* Arrows + counter: top-right of image, symmetrically around the number */
 .sli-nav.tprev,
 .sli-nav.tnext {
   position: fixed !important;
-  top: auto !important;
-  bottom: 24px;
+  top: 16% !important;
+  bottom: auto !important;
   z-index: 100;
   color: white;
   font-size: 20px;
   width: auto;
   height: auto;
+  cursor: pointer;
 }
-.sli-nav.tprev { right: 22%; }
-.sli-nav.tnext { right: 12.5%; }
+.sli-nav.tprev { right: 12%; }  /* 5% left of number centre */
+.sli-nav.tnext { right: 2%; }   /* 5% right of number centre */
 .a_q1 span.number {
   position: fixed !important;
-  bottom: 24px;
-  right: 17.25%;
-  transform: translateX(50%);
+  top: 16%;
+  bottom: auto;
+  right: 7%;
+  transform: translateX(50%);   /* centre the element at right:7% */
   float: none;
   color: white;
   font-size: 13px;
@@ -238,8 +240,9 @@ html, body {
   #lines{ display: none; }
   .project-menu{ background: black; }
   section#slider{ margin-top: 135px; padding-top: 15px; z-index: 4; }
-  .sli-nav.tprev { right: 19.4%; top: -2px; transform: rotate(0deg) !important; }
-  .sli-nav.tnext { position: absolute; right: 7.5%; top: -2px; }
+  .sli-nav.tprev { position: fixed !important; right: 30% !important; top: 20% !important; transform: none !important; }
+  .sli-nav.tnext { position: fixed !important; right: 5% !important; top: 20% !important; }
+  .a_q1 span.number { top: 20% !important; right: 17.5% !important; }
   .back-tooltiptext, .projects-tooltiptext{ display: none; }
 }
 </style>
