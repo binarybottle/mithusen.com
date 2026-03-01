@@ -307,7 +307,8 @@ html, body {
 .a_q1 span.number {
   position: fixed !important;
   bottom: 24px;
-  right: 17%;
+  right: 17.25%;
+  transform: translateX(50%);
   float: none;
   color: white;
   font-size: 13px;
