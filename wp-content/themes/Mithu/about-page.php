@@ -425,7 +425,7 @@ button{
 </style>
  	<canvas id="projector">Your browser does not support the Canvas element.</canvas>
     <audio id="myAudio">
-      <source src="wp-content/themes/Mithu/img/laughingman2.wav" type="audio/wav">
+      <source src="<?php bloginfo('template_url'); ?>/img/laughingman2.wav" type="audio/wav">
     </audio>
     <!--<span class="animateIt" onclick="playAudio()" style="font-size: 18px;"><span style="color:#fe0000">Un</span>home</span>-->
     <div class="title-div"> 
@@ -579,16 +579,16 @@ button{
               <!-- <img onclick="openLeftMenu()" class="studio-icon" src="wp-content/themes/Mithu/img/studio1.png"> -->
           </div>
 		<div class="roof-icon-div back-tooltip">
-              <img onclick="history.back()" class="roof-icon" src="wp-content/themes/Mithu/img/icons8-spiral-64.png"><span class="back-tooltiptext" style="font-size:13px;">back</span>  
+              <img onclick="history.back()" class="roof-icon" src="<?php bloginfo('template_url'); ?>/img/icons8-spiral-64.png"><span class="back-tooltiptext" style="font-size:13px;">back</span>  
           </div>
 		<!-- <div class="spiral-icon-div">
               <img class="spiral-icon" src="wp-content/uploads/2017/04/Spiral.webp" onclick="openProjectMenu()">
           </div> -->
 		<div id="download" class="shop-icon-div projects-tooltip">
-              <img  class="spiral-icon" onclick="playAudio()" src="wp-content/themes/Mithu/img/red_arrow.png"><span class="projects-tooltiptext" style="font-size:13px;">download CV</span>
+              <img  class="spiral-icon" onclick="playAudio()" src="<?php bloginfo('template_url'); ?>/img/red_arrow.png"><span class="projects-tooltiptext" style="font-size:13px;">download CV</span>
         </div>
 		<div class="news-icon-div news-tooltip">
-              <a href="#news"><img class="spiral-icon" src="wp-content/themes/Mithu/img/new.png"></a><span class="news-tooltiptext" style="font-size:30px;">breaking news!</span>
+              <a href="#news"><img class="spiral-icon" src="<?php bloginfo('template_url'); ?>/img/new.png"></a><span class="news-tooltiptext" style="font-size:30px;">breaking news!</span>
         </div>
 			<a id="cv_file" href="<?php echo get_field('cv'); ?>" style="display:none" download></a>
 
@@ -624,7 +624,7 @@ download.addEventListener('click', function() {
 });
 function openLeftMenu(){
   var elem2 = document.getElementsByClassName("roof-icon-div")[0];
-  document.getElementsByClassName("studio-icon")[0].src = "wp-content/themes/Mithu/img/studio1.png";
+  document.getElementsByClassName("studio-icon")[0].src = "<?php bloginfo('template_url'); ?>/img/studio1.png";
   frame1();
   	function frame1(){
       elem2.style.opacity = 1;
