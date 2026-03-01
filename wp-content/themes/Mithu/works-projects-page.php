@@ -431,7 +431,7 @@ ul.work-detail a:hover img,ul.work-detail li.active a img {
 <canvas id="projector">Your browser does not support the Canvas element.</canvas>
 <canvas id="lines">Your browser does not support the Canvas element.</canvas>
     <audio id="myAudio">
-      <source src="wp-content/themes/Mithu/img/laughingman2.wav" type="audio/wav">
+      <source src="<?php bloginfo('template_url'); ?>/img/laughingman2.wav" type="audio/wav">
     </audio>
     <!--<span class="animateIt" onclick="playAudio()" style="font-size: 18px;"><span style="color:#fe0000">Un</span>home</span>-->
     <div class="title-div"> 
@@ -446,13 +446,13 @@ ul.work-detail a:hover img,ul.work-detail li.active a img {
   		</p>
 	</div>
       	<!-- <div class="studio-icon-div">
-              <img onclick="openLeftMenu()" class="studio-icon" src="wp-content/uploads/2017/04/Spiral.webp"> 
+              <img onclick="openLeftMenu()" class="studio-icon" src="<?php bloginfo('url'); ?>/wp-content/uploads/2017/04/Spiral.webp"> 
           </div> -->
 		<div class="roof-icon-div back-tooltip">
-              <img onclick="history.back()" class="roof-icon" src="wp-content/themes/Mithu/img/icons8-spiral-64.png"><span class="back-tooltiptext" style="font-size:13px;">back</span>
+              <img onclick="history.back()" class="roof-icon" src="<?php bloginfo('template_url'); ?>/img/icons8-spiral-64.png"><span class="back-tooltiptext" style="font-size:13px;">back</span>
           </div>
 		<div class="spiral-icon-div projects-tooltip">
-      		<img class="spiral-icon" src="wp-content/uploads/2017/04/Spiral.webp" onclick="openProjectMenu()"><span class="projects-tooltiptext" style="font-size:13px;">projects</span>  
+      		<img class="spiral-icon" src="<?php bloginfo('url'); ?>/wp-content/uploads/2017/04/Spiral.webp" onclick="openProjectMenu()"><span class="projects-tooltiptext" style="font-size:13px;">projects</span>  
           </div>
 		<div class="left-menu">
 		  	<?php
@@ -705,7 +705,7 @@ function playAudio() {
 }  
 function openLeftMenu(){
   var elem2 = document.getElementsByClassName("roof-icon-div")[0];
-  document.getElementsByClassName("studio-icon")[0].src = "wp-content/themes/Mithu/img/studio1.png";
+  document.getElementsByClassName("studio-icon")[0].src = "<?php bloginfo('template_url'); ?>/img/studio1.png";
   frame1();
   	function frame1(){
       elem2.style.opacity = 1;

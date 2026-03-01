@@ -205,12 +205,12 @@ html, body {
   width: auto;
   height: auto;
 }
-.sli-nav.tprev { right: 17.8%; }
+.sli-nav.tprev { right: 22%; }
 .sli-nav.tnext { right: 12.5%; }
 .a_q1 span.number {
   position: fixed !important;
   bottom: 24px;
-  right: 22%;
+  right: 17%;
   float: none;
   color: white;
   font-size: 13px;
