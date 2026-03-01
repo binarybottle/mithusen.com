@@ -547,56 +547,23 @@ function toggleContent(){
   else {content.style.display = "block";}
 }
 jQuery(".tnext").click(function(){
-	var totalItems = jQuery('.owl-item').length;
-	var currentIndex=document.getElementById("currentIndex").innerHTML;
-	if(currentIndex==totalItems){
-		currentIndex=1;
-	}
-	else{
-		//parseInt(stringValueX, 10)
-		var currentIndex=parseInt(document.getElementById("currentIndex").innerHTML,10)+1;
-	}
-	jQuery('#currentIndex').html(currentIndex);
-	var title=jQuery("#gallery-"+currentIndex).attr("data-title");
-	jQuery(".sounda").html(title);
-	
-	
+    var totalItems = jQuery('.owl-item').length;
+    var currentIndex = parseInt(document.getElementById("currentIndex").innerHTML, 10);
+    currentIndex = (currentIndex >= totalItems) ? 1 : currentIndex + 1;
+    jQuery('#currentIndex').html(currentIndex);
+    jQuery(".sounda").html(jQuery("#gallery-"+currentIndex).attr("data-title"));
 })
 
 var owl = jQuery('.owl-carousel');
-
-jQuery(".tnext").click(function(){
-    owl.trigger('next.owl.carousel')
-})
+jQuery(".tnext").click(function(){ owl.trigger('next.owl.carousel'); })
+jQuery(".tprev").click(function(){ owl.trigger('prev.owl.carousel'); })
 
 owl.on('changed.owl.carousel', function(event) {
-    /*var totalItems = jQuery('.owl-item').length;
-	var currentIndex=document.getElementById("currentIndex").innerHTML;
-	if(currentIndex==totalItems){
-		currentIndex=1;
-	}
-	else{
-		//parseInt(stringValueX, 10)
-		var currentIndex=parseInt(document.getElementById("currentIndex").innerHTML,10)+1;
-	}*/
-    if ( event.page.count !=0 ) {
-        var currentIndex = event.page.index +1
-	    jQuery('#currentIndex').html(currentIndex);
+    if ( event.page.count != 0 ) {
+        var currentIndex = event.page.index + 1;
+        jQuery('#currentIndex').html(currentIndex);
+        jQuery(".sounda").html(jQuery("#gallery-"+currentIndex).attr("data-title"));
     }
-
-	var title=jQuery("#gallery-"+currentIndex).attr("data-title");
-	jQuery(".sounda").html(title);
-
-})
-
-owl.on('initialized.owl.carousel'), function(event) {
-    var title=jQuery("#gallery-1").attr("data-title");
-	jQuery(".sounda").html(title);
-	console.log("initialized owl")
-}
-
-jQuery(".tprev").click(function(){
-    owl.trigger('prev.owl.carousel')
 })
 
 document.addEventListener("contextmenu", evt => evt.preventDefault(), false);
