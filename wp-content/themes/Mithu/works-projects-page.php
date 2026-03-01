@@ -525,7 +525,7 @@ ul.work-detail a:hover img,ul.work-detail li.active a img {
 			  </span>
 		  </p>
           <p>
-			  <a class="left-menu-links" href="https://mithusen.in/projects/drawings/">
+			  <a class="left-menu-links" href="https://mithusen.in/drawing-room/">
 				  <span style="color:#01b5f2; font-size: 20px">❧ </span>drawing
 			  </a>
 		  </p>
