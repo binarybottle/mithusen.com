@@ -437,8 +437,7 @@ register_post_type( 'mediums',
 	),
 	'taxonomies' => array('category','post_tag'),
 	'public' => true,
-	'has_archive' => true,
-	'rewrite' => array('slug' => 'projects'),
+	'has_archive' => false,
 	'supports' => array('title','editor','thumbnail', 'author', 'comments')
 	)
 );
