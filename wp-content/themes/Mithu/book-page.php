@@ -10,6 +10,8 @@ get_header();?>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
 </head>
 <style>
 #logo, #nav { display: none; }
@@ -253,10 +255,7 @@ html, body {
 </div>
 
 <?php endwhile; ?>
-<?php get_footer(); ?>
 
-<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
 <script>
 ////////////////////////// PARTICLE ENGINE ////////////////////////////////////////
 var ParticleEngine = (function() {
@@ -349,3 +348,4 @@ var particles;
 	window.addEventListener('resize', function(){ particles.resize(); }, false);
 }());
 </script>
+<?php get_footer(); ?>
