@@ -490,35 +490,6 @@ while ( have_posts() ) : the_post();
       364 pages &nbsp;·&nbsp; Nov. 2024<br>
       ISBN: 978-9394501874
     </p>
-    <p style="font-size:13px; color:#bbb; letter-spacing:2px; text-transform:uppercase; margin:0 0 12px; font-family:Arial,sans-serif;">Buy</p>
-    <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:36px;">
-      <a style="display:inline-block; padding:10px 24px; border:1px solid rgba(255,255,255,0.6); color:white; text-decoration:none; font-family:Arial,sans-serif; font-size:13px; border-radius:999px; white-space:nowrap;" href="https://www.amazon.com/UnMyth-Works-Worlds-Mithu-Sen/dp/9394501878" target="_blank" rel="noopener">Amazon</a>
-      <a style="display:inline-block; padding:10px 24px; border:1px solid rgba(255,255,255,0.6); color:white; text-decoration:none; font-family:Arial,sans-serif; font-size:13px; border-radius:999px; white-space:nowrap;" href="https://www.mapinpub.com/products/unmyth?variant=46307019522262" target="_blank" rel="noopener">Mapin</a>
-      <a style="display:inline-block; padding:10px 24px; border:1px solid rgba(255,255,255,0.6); color:white; text-decoration:none; font-family:Arial,sans-serif; font-size:13px; border-radius:999px; white-space:nowrap;" href="https://www.gallerychemould.com/publications/180-unmyth-mithu-sen/" target="_blank" rel="noopener">Chemould Gallery</a>
-    </div>
-    <p style="font-size:13px; color:#bbb; letter-spacing:2px; text-transform:uppercase; margin:0 0 12px; font-family:Arial,sans-serif;">Reviews</p>
-    <ul style="list-style:none; padding:0; margin:0; font-family:Arial,sans-serif;">
-      <li style="margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid rgba(255,255,255,0.07);">
-        <span style="display:block; font-size:11px; color:#bbb; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:3px;">ArtReview Asia</span>
-        <a style="color:#e8e8e8; text-decoration:none; font-size:14px; line-height:1.4;" href="https://artreview.com/unmyth-works-and-words-by-mithu-sen-review-chris-fite-wassilak/" target="_blank" rel="noopener">The 'Unmyths' of Mithu Sen</a>
-      </li>
-      <li style="margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid rgba(255,255,255,0.07);">
-        <span style="display:block; font-size:11px; color:#bbb; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:3px;">Mint Lounge</span>
-        <a style="color:#e8e8e8; text-decoration:none; font-size:14px; line-height:1.4;" href="https://www.livemint.com/mint-lounge/art-and-culture/unmyth-new-monograph-mithu-sen-collapsing-hierarchies-11745560422178.html" target="_blank" rel="noopener">A mind map of two decades of her art</a>
-      </li>
-      <li style="margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid rgba(255,255,255,0.07);">
-        <span style="display:block; font-size:11px; color:#bbb; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:3px;">Elle Decor</span>
-        <a style="color:#e8e8e8; text-decoration:none; font-size:14px; line-height:1.4;" href="https://elledecor.in/mithu-sen-book-unmyth-chemould-knma/" target="_blank" rel="noopener">Mithu Sen goes off-script in her new book</a>
-      </li>
-      <li style="margin-bottom:12px; padding-bottom:12px; border-bottom:1px solid rgba(255,255,255,0.07);">
-        <span style="display:block; font-size:11px; color:#bbb; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:3px;">India Today</span>
-        <a style="color:#e8e8e8; text-decoration:none; font-size:14px; line-height:1.4;" href="https://www.indiatoday.in/magazine/leisure/story/20250707-mithu-sens-unmyth-a-singular-artist-2747043-2025-06-28" target="_blank" rel="noopener">A singular artist</a>
-      </li>
-      <li style="margin-bottom:12px;">
-        <span style="display:block; font-size:11px; color:#bbb; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:3px;">AbirPothi</span>
-        <a style="color:#e8e8e8; text-decoration:none; font-size:14px; line-height:1.4;" href="https://www.abirpothi.com/and-then-many-uns-of-mithu-sen/" target="_blank" rel="noopener">And Then Many 'Uns' of Mithu Sen</a>
-      </li>
-    </ul>
 </div>
 <?php endif; ?>
 </div>
