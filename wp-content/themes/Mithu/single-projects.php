@@ -479,20 +479,7 @@ while ( have_posts() ) : the_post();
 						<div class="toggle-tooltip" style="width:fit-content">
                         <img onclick="toggleContent()" style="width:32px; height:auto; margin-top: 20px; cursor:pointer;" src="../../wp-content/themes/Mithu/img/icons8-spiral-64.png"><span class="toggle-tooltiptext" style="font-size:13px;">less/more</span>
                       </div>-->
-						<div class="load-content" id="asx" style="display:block;transition-duration:0.45s"><?php the_content(); ?>
-<?php if (get_post_field('post_name', get_the_ID()) === 'unmyth-acknowledgement') : ?>
-<div class="book-info" style="margin-top:28px;">
-    <p style="font-size:34px; font-weight:bold; margin:0 0 6px; color:white; letter-spacing:1px;">Unmyth</p>
-    <p style="font-size:15px; color:#e0e0e0; margin:0 0 6px; font-family:Arial,sans-serif;">Works and Worlds of Mithu Sen</p>
-    <p style="font-size:13px; color:#ccc; margin:0 0 20px; font-family:Arial,sans-serif;">Edited by Irina Aristarkhova</p>
-    <p style="font-size:13px; color:#ccc; font-family:Arial,sans-serif; line-height:2; margin-bottom:28px; border-top:1px solid rgba(255,255,255,0.18); border-bottom:1px solid rgba(255,255,255,0.18); padding:14px 0;">
-      Publisher: Mapin / Chemould Prescott Road<br>
-      364 pages &nbsp;·&nbsp; Nov. 2024<br>
-      ISBN: 978-9394501874
-    </p>
-</div>
-<?php endif; ?>
-</div>
+						<div class="load-content" id="asx" style="display:block;transition-duration:0.45s"><?php the_content(); ?></div>
                     </div>
 					</div>   
       </div>
