@@ -434,7 +434,6 @@ button{
         </a><br>
   		<p class="top-menu"><span><a style="color:white;"class="main-menu" href="https://mithusen.in/works-projects">works</a></span>
           <!-- <span><a style="color:white;"class="main-menu" href="https://mithusen.in/words">words</a></span> -->
-          <span><a style="color:white;"class="main-menu" href="https://mithusen.in/book/">book</a></span>
           <span><a style="color:pink;"class="main-menu" href="https://freemithu.mithusen.in">freemithu</a></span>
           <span><a style="color:white;" href="https://mithusen.in/about">about</a></span>
           <span><a style="color:white;" class="main-menu" href="https://mithusen.in/connect">connect</a></span>

@@ -391,7 +391,6 @@ while ( have_posts() ) : the_post();
         </a><br>
   		<p class="top-menu"><span><a style="color:white;"class="main-menu" href="https://mithusen.in/works-projects">works</a></span>
           <!-- <span><a style="color:white;"class="main-menu" href="https://mithusen.in/words">words</a></span> -->
-          <span><a style="color:white;"class="main-menu" href="https://mithusen.in/book/">book</a></span>
           <span><a style="color:pink;"class="main-menu" href="https://freemithu.mithusen.in/">freemithu</a></span>
           <span><a style="color:white;" class="main-menu" href="https://mithusen.in/about">about</a></span>
           <span><a style="color:white;" class="main-menu" href="https://mithusen.in/connect">connect</a></span>
@@ -486,6 +485,158 @@ while ( have_posts() ) : the_post();
       </div>
 				</div>
 </section>
+
+<?php if (get_post_field('post_name', get_the_ID()) === 'unmyth-acknowledgement') : ?>
+<style>
+.book-section {
+  position: relative; z-index: 5;
+  margin: 40px auto 80px;
+  width: 90%; max-width: 920px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  align-items: flex-start;
+}
+.book-cover {
+  flex: 0 0 240px;
+  max-width: 240px;
+}
+.book-cover img {
+  width: 100%; height: auto;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+  display: block;
+}
+.book-info { flex: 1; min-width: 240px; }
+.book-title {
+  font-size: 34px; font-weight: bold;
+  margin: 0 0 6px; color: white;
+  letter-spacing: 1px;
+  font-family: "Comic Sans MS", "Comic Sans", "Comic Neue", cursive;
+}
+.book-subtitle {
+  font-size: 15px; color: #e0e0e0;
+  margin: 0 0 6px;
+  font-family: Arial, sans-serif;
+}
+.book-editor {
+  font-size: 13px; color: #ccc;
+  margin: 0 0 20px;
+  font-family: Arial, sans-serif;
+}
+.book-meta {
+  font-size: 13px; color: #ccc;
+  font-family: Arial, sans-serif;
+  line-height: 2; margin-bottom: 28px;
+  border-top: 1px solid rgba(255,255,255,0.18);
+  border-bottom: 1px solid rgba(255,255,255,0.18);
+  padding: 14px 0;
+}
+.buy-heading, .reviews-heading {
+  font-size: 13px; color: #bbb;
+  letter-spacing: 2px; text-transform: uppercase;
+  margin: 0 0 12px;
+  font-family: Arial, sans-serif;
+}
+.buy-buttons {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  margin-bottom: 36px;
+}
+.buy-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 1px solid rgba(255,255,255,0.6);
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  border-radius: 999px;
+  transition: background 0.25s, border-color 0.25s;
+  white-space: nowrap;
+}
+.buy-btn:hover {
+  background: rgba(255,255,255,0.15);
+  border-color: white; color: white;
+}
+.reviews-list {
+  list-style: none; padding: 0; margin: 0;
+  font-family: Arial, sans-serif;
+}
+.reviews-list li {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+.reviews-list li:last-child { border-bottom: none; }
+.reviews-list a {
+  color: #e8e8e8;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.4;
+  transition: color 0.2s;
+}
+.reviews-list a:hover { color: white; text-decoration: underline; }
+.review-pub {
+  display: block;
+  font-size: 11px; color: #bbb;
+  text-transform: uppercase; letter-spacing: 1.5px;
+  margin-bottom: 3px;
+  font-family: Arial, sans-serif;
+}
+@media (max-width: 680px) {
+  .book-cover { flex: 0 0 100%; max-width: 180px; }
+  .book-title { font-size: 26px; }
+  .buy-buttons { gap: 8px; }
+  .book-section { gap: 28px; }
+}
+</style>
+
+<div class="book-section">
+  <div class="book-cover">
+    <img src="https://www.mapinpub.com/cdn/shop/files/Unmyth_cover.jpg" alt="Unmyth book cover">
+  </div>
+  <div class="book-info">
+    <p class="book-title">Unmyth</p>
+    <p class="book-subtitle">Works and Worlds of Mithu Sen</p>
+    <p class="book-editor">Edited by Irina Aristarkhova</p>
+    <p class="book-meta">
+      Publisher: Mapin / Chemould Prescott Road<br>
+      364 pages &nbsp;·&nbsp; Nov. 2024<br>
+      ISBN: 978-9394501874
+    </p>
+    <p class="buy-heading">Buy</p>
+    <div class="buy-buttons">
+      <a class="buy-btn" href="https://www.amazon.com/UnMyth-Works-Worlds-Mithu-Sen/dp/9394501878" target="_blank" rel="noopener">Amazon</a>
+      <a class="buy-btn" href="https://www.mapinpub.com/products/unmyth?variant=46307019522262" target="_blank" rel="noopener">Mapin</a>
+      <a class="buy-btn" href="https://www.gallerychemould.com/publications/180-unmyth-mithu-sen/" target="_blank" rel="noopener">Chemould Gallery</a>
+    </div>
+    <p class="reviews-heading">Reviews</p>
+    <ul class="reviews-list">
+      <li>
+        <span class="review-pub">ArtReview Asia</span>
+        <a href="https://artreview.com/unmyth-works-and-words-by-mithu-sen-review-chris-fite-wassilak/" target="_blank" rel="noopener">The 'Unmyths' of Mithu Sen</a>
+      </li>
+      <li>
+        <span class="review-pub">Mint Lounge</span>
+        <a href="https://www.livemint.com/mint-lounge/art-and-culture/unmyth-new-monograph-mithu-sen-collapsing-hierarchies-11745560422178.html" target="_blank" rel="noopener">A mind map of two decades of her art</a>
+      </li>
+      <li>
+        <span class="review-pub">Elle Decor</span>
+        <a href="https://elledecor.in/mithu-sen-book-unmyth-chemould-knma/" target="_blank" rel="noopener">Mithu Sen goes off-script in her new book</a>
+      </li>
+      <li>
+        <span class="review-pub">India Today</span>
+        <a href="https://www.indiatoday.in/magazine/leisure/story/20250707-mithu-sens-unmyth-a-singular-artist-2747043-2025-06-28" target="_blank" rel="noopener">A singular artist</a>
+      </li>
+      <li>
+        <span class="review-pub">AbirPothi</span>
+        <a href="https://www.abirpothi.com/and-then-many-uns-of-mithu-sen/" target="_blank" rel="noopener">And Then Many 'Uns' of Mithu Sen</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<?php endif; ?>
+
   <div class="spiral-icon-div projects-tooltip">
       <img class="spiral-icon" src="../../wp-content/uploads/2017/04/Spiral.webp" onclick="openProjectMenu()"><span class="projects-tooltiptext" style="font-size:13px;">projects</span>
   </div>

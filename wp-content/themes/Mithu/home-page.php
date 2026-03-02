@@ -468,10 +468,9 @@ html, body {
       	<br>
   		<p class="top-menu"><span><a style="color:white;" class="top-menu-links" href="https://mithusen.in/works-projects" onmouseover="hoverLink(0)" onmouseout="removeHover(0)">works</a></span>
           <!-- <span><a style="color:white;" class="top-menu-links" href="https://mithusen.in/words" onmouseover="hoverLink(1)" onmouseout="removeHover(1)">words</a></span> -->
-          <span><a style="color:white;"  class="top-menu-links" href="https://mithusen.in/book/" onmouseover="hoverLink(1)" onmouseout="removeHover(1)">book</a></span>
-          <span><a style="color:pink;"  class="top-menu-links" href="https://freemithu.mithusen.in/" onmouseover="hoverLink(2)" onmouseout="removeHover(2)">freemithu</a></span>
-          <span><a style="color:white;" class="top-menu-links"  href="https://mithusen.in/about" onmouseover="hoverLink(3)" onmouseout="removeHover(3)">about</a></span>
-          <span><a style="color:white;"  class="top-menu-links" href="https://mithusen.in/connect" onmouseover="hoverLink(4)" onmouseout="removeHover(4)">connect</a></span>
+          <span><a style="color:pink;"  class="top-menu-links" href="https://freemithu.mithusen.in/" onmouseover="hoverLink(1)" onmouseout="removeHover(1)">freemithu</a></span>
+          <span><a style="color:white;" class="top-menu-links"  href="https://mithusen.in/about" onmouseover="hoverLink(2)" onmouseout="removeHover(2)">about</a></span>
+          <span><a style="color:white;"  class="top-menu-links" href="https://mithusen.in/connect" onmouseover="hoverLink(3)" onmouseout="removeHover(3)">connect</a></span>
   		</p>
 	</div>
 	<div class="concepts-div"> 
@@ -638,13 +637,13 @@ function openLeftMenu(){
     }
 }
 function hoverLink(id){
-  for(var i = 0; i < 5 ; i++){
+  for(var i = 0; i < 4 ; i++){
   if(i!=id) 
   document.getElementsByClassName("top-menu-links")[i].style.opacity = 0.75; 
   }
 }
 function removeHover(id){
-  for(var i = 0; i < 5 ; i++){
+  for(var i = 0; i < 4 ; i++){
    if(i!=id)
    document.getElementsByClassName("top-menu-links")[i].style.opacity = 1; 
   }

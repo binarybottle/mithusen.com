@@ -440,7 +440,6 @@ ul.work-detail a:hover img,ul.work-detail li.active a img {
         </a><br>
   		<p class="top-menu"><span><a style="color:white;" href="https://mithusen.in/works-projects">works</a></span>
           <!-- <span><a style="color:white;"class="main-menu" href="https://mithusen.in/words">words</a></span> -->
-          <span><a style="color:white;"class="main-menu" href="https://mithusen.in/book/">book</a></span>
           <span><a style="color:pink;"class="main-menu" href="https://freemithu.mithusen.in/">freemithu</a></span>
           <span><a style="color:white;"class="main-menu" href="https://mithusen.in/about">about</a></span>
           <span><a style="color:white;" class="main-menu" href="https://mithusen.in/connect">connect</a></span>
@@ -617,7 +616,7 @@ ul.work-detail a:hover img,ul.work-detail li.active a img {
 <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <ul class="work-detail">
-				<?php $args=array('post_type'=>'projects','post_status'=>'publish','posts_per_page'=>-1,'order'=>'asc'); 
+				<?php $args=array('post_type'=>'projects','post_status'=>'publish','posts_per_page'=>-1,'orderby'=>'ID','order'=>'desc'); 
 				$works_query = new WP_Query( $args );
 				$i=0;
 				while($works_query->have_posts()): $works_query->the_post();
@@ -672,7 +671,7 @@ document.getElementsByTagName('head')[0].appendChild(meta); //to remove translat
 var x = document.getElementById("myAudio"); 
 
 <?php 
-	$args=array('post_type'=>'projects','post_status'=>'publish','posts_per_page'=>-1,'order'=>'asc'); 
+	$args=array('post_type'=>'projects','post_status'=>'publish','posts_per_page'=>-1,'orderby'=>'ID','order'=>'desc'); 
 	$class_query = new WP_Query( $args );
 	$all_classifications = ["radical","lingual","unmonolith","untaboo","counter","drawing","sculpture","performance","vidaud","installation","contract","unlanguage", "unpoetry"];
 	$projects = [];
